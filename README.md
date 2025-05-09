@@ -51,7 +51,7 @@ Adicionar (totalPages="número que o usuário escolher") ao final da requisiçã
 
 
 
--VIDEOGAMEMODEL.JAVA
+-VIDEOGAMEMODEL.JAVA:
 
 Classe que representa os dados de um jogo.
 Contém os atributos principais obtidos da RAWG API, como:
@@ -63,7 +63,7 @@ background_image: imagem de fundo
 genres: lista de gêneros
 Essa classe é usada tanto para exibir dados quanto para popular listas de jogos.
 
--VIDEOGAMESERVICE.JAVA
+-VIDEOGAMESERVICE.JAVA:
 
 Classe de serviço responsável por toda a lógica de negócio e requisições à API externa RAWG.
 Principais responsabilidades:
@@ -80,7 +80,7 @@ Comunicação com a RAWG API via RestTemplate,
 
 
 
--VIDEOGAMECONTROLLER.JAVA
+-VIDEOGAMECONTROLLER.JAVA:
 
 Classe que expõe a API REST da aplicação.
 É a camada que interage com o usuário (via HTTP), fornecendo os seguintes endpoints:
@@ -97,14 +97,14 @@ Utiliza os serviços da VideogameService para processar as requisições.
 
 
 
--FAVORITODTO.JAVA
+-FAVORITODTO.JAVA:
 
 Objeto de transferência de dados (DTO) usado para receber o nome do jogo a ser adicionado aos favoritos.
 Usado no corpo do POST /games/favoritar.
 
 
 
-GAME.JAVA
+-GAME.JAVA:
 
 Classe que representa um jogo individual retornado pela RAWG API.
 Usada como parte da resposta da API externa. Contém informações detalhadas como:
@@ -120,7 +120,7 @@ Essa classe é usada internamente para interpretar a resposta da API e repassar 
 
 
 
--GAMERESPONSE.JAVA
+-GAMERESPONSE.JAVA:
 
 Classe que modela a resposta completa da RAWG API ao buscar por jogos.
 Contém:
@@ -140,7 +140,7 @@ Faz parte da hierarquia usada para deserializar corretamente as plataformas dent
 
 
 
--PLATFORMWRAPPER.JAVA
+-PLATFORMWRAPPER.JAVA:
 
 Classe auxiliar usada para encapsular o objeto Platform dentro da estrutura da resposta da API.
 A RAWG API retorna plataformas em um formato aninhado como:
