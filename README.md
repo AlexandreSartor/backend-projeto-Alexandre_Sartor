@@ -1,4 +1,6 @@
 CATÁLOGO DE GAMES
+
+
 Projeto desenvolvido em Java + Spring Boot que consome a API pública da RAWG.io para listar, buscar, favoritar e recomendar jogos eletrônicos.
 
 TECNOLOGIAS UTILIZADAS:
