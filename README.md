@@ -38,7 +38,7 @@ GET/ http://localhost:8000/games/top/10
 
 
 Recomendação por gênero e nota
-GET/ http://localhost:8000/games/recomendados?genero=role-playing-games
+GET/http://localhost:8080/games/recomendados?genero=role-playing-games-rpg&notaMinima=80&paginas=3
 
 
 Adicionar (?page="número que o usúario escolher") ao final da requisição para escolher uma página específica da API
