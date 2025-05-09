@@ -3,6 +3,8 @@ CATÁLOGO DE GAMES
 
 Projeto desenvolvido em Java + Spring Boot que consome a API pública da RAWG.io para listar, buscar, favoritar e recomendar jogos eletrônicos.
 
+
+
 TECNOLOGIAS UTILIZADAS:
 Java 21+
 Spring Boot
@@ -13,7 +15,11 @@ Servidor disponível em:
 http://localhost:8000/games
 
 
+
+
 EXEMPLOS DE REQUISIÇÕES:
+
+
 
 Buscar jogos por nome:
 GET/http://localhost:8000/games/buscar?nome=zelda
@@ -38,7 +44,11 @@ GET/ http://localhost:8000/games/recomendados?genero=role-playing-games
 Adicionar (?page="número que o usúario escolher") ao final da requisição para escolher uma página específica da API
 Adicionar (totalPages="número que o usuário escolher") ao final da requisição que busca o jogo pelo nome,para determinar uma quantidade de páginas a retornar
 
+
+
 ESTRUTURA DO PROJETO:
+
+
 
 VIDEOGAMEMODEL.JAVA
 
@@ -66,6 +76,8 @@ Gerenciamento da lista de jogos favoritados,
 
 Comunicação com a RAWG API via RestTemplate,
 
+
+
 VIDEOGAMECONTROLLER.JAVA
 
 Classe que expõe a API REST da aplicação.
@@ -81,9 +93,13 @@ Retornar dados sobre o projeto,
 
 Utiliza os serviços da VideogameService para processar as requisições.
 
+
+
 FAVORITODTO.JAVA
 Objeto de transferência de dados (DTO) usado para receber o nome do jogo a ser adicionado aos favoritos.
 Usado no corpo do POST /games/favoritar.
+
+
 
 GAME.JAVA
 Classe que representa um jogo individual retornado pela RAWG API.
@@ -97,6 +113,8 @@ genres: lista de gêneros do jogo
 platforms: lista de plataformas (envolvendo a classe PlatformWrapper)
 
 Essa classe é usada internamente para interpretar a resposta da API e repassar os dados ao VideogameModel.
+
+
 
 GAMERESPONSE.JAVA
 Classe que modela a resposta completa da RAWG API ao buscar por jogos.
@@ -113,6 +131,8 @@ Contém apenas:
 name: nome da plataforma
 
 Faz parte da hierarquia usada para deserializar corretamente as plataformas dentro de cada jogo.
+
+
 
 PLATFORMWRAPPER.JAVA
 Classe auxiliar usada para encapsular o objeto Platform dentro da estrutura da resposta da API.
