@@ -63,6 +63,7 @@ genres: lista de gêneros
 Essa classe é usada tanto para exibir dados quanto para popular listas de jogos.
 
 VIDEOGAMESERVICE.JAVA
+
 Classe de serviço responsável por toda a lógica de negócio e requisições à API externa RAWG.
 Principais responsabilidades:
 
@@ -96,12 +97,14 @@ Utiliza os serviços da VideogameService para processar as requisições.
 
 
 FAVORITODTO.JAVA
+
 Objeto de transferência de dados (DTO) usado para receber o nome do jogo a ser adicionado aos favoritos.
 Usado no corpo do POST /games/favoritar.
 
 
 
 GAME.JAVA
+
 Classe que representa um jogo individual retornado pela RAWG API.
 Usada como parte da resposta da API externa. Contém informações detalhadas como:
 
@@ -117,6 +120,7 @@ Essa classe é usada internamente para interpretar a resposta da API e repassar 
 
 
 GAMERESPONSE.JAVA
+
 Classe que modela a resposta completa da RAWG API ao buscar por jogos.
 Contém:
 
@@ -125,6 +129,7 @@ results: lista de objetos Game
 É essencial para deserializar corretamente a resposta JSON da RAWG API
 
 PLATAFORM.JAVA
+
 Classe que representa uma plataforma (como PC, PlayStation, Xbox, etc.).
 Contém apenas:
 
@@ -135,6 +140,7 @@ Faz parte da hierarquia usada para deserializar corretamente as plataformas dent
 
 
 PLATFORMWRAPPER.JAVA
+
 Classe auxiliar usada para encapsular o objeto Platform dentro da estrutura da resposta da API.
 A RAWG API retorna plataformas em um formato aninhado como:
 
