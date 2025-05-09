@@ -146,10 +146,16 @@ Classe auxiliar usada para encapsular o objeto Platform dentro da estrutura da r
 A RAWG API retorna plataformas em um formato aninhado como:
 
 "platforms": [
+
   {
-    "platform": {
+  
+   
+"platform": {
+     
       "name": "PC"
+    
     }
+    
   }
 ]
 Portanto, o PlatformWrapper serve para mapear esse nível intermediário.
