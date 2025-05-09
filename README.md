@@ -42,6 +42,7 @@ GET/http://localhost:8080/games/recomendados?genero=role-playing-games-rpg&notaM
 
 
 Adicionar (?page="número que o usúario escolher") ao final da requisição para escolher uma página específica da API
+
 Adicionar (totalPages="número que o usuário escolher") ao final da requisição que busca o jogo pelo nome,para determinar uma quantidade de páginas a retornar
 
 
